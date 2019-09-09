@@ -17,7 +17,7 @@ class DrowController extends Controller
 	public function add()
 	{
 		$uid=mt_rand(1,10000);
-		// $uid=2;
+		$uid=2;
 		$record = DrowModel::where('uid',$uid)->get()->toArray();
 		$count=0;
 		foreach ($record as $key => $value) {
